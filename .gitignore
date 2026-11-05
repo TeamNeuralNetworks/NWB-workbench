@@ -1,0 +1,77 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environment
+venv/
+.env/
+.venv/
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Distribution / packaging
+build/
+dist/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Testing / coverage reports
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+.hypothesis/
+
+# PyCharm project files
+.idea/
+
+# VS Code settings
+.vscode/
+
+# Logs and temporary files
+*.log
+*.tmp
+*.swp
+*.swo
+*.DS_Store
+Thumbs.db
+
+# MyPy cache
+.mypy_cache/
+
+# Django/Pytest/Other framework caches
+db.sqlite3
+*.mo
+*.pot
+celerybeat-schedule
+instance/
+web_app.log
+
+# Docker / CI/CD
+*.dockerignore
+docker-compose.override.yml
+
+# Credentials and environment variables
+.env
+*.secret
+config.json
+GUI/Fiberphotometry/NWB_Converter.spec
+GUI/Fiberphotometry/NWB_Converter_window.spec
+GUI/Fiberphotometry/NWB_Converter_mac.spec
+Builders/Fiberphotometry/convert_from_excel.py
+environment.yml
+Tools/Electrophysiology/burst_detection/__init__.py
+Tools/Electrophysiology/burst_detection/logISI/__init__.py
+Tools/Electrophysiology/burst_detection/logISI/Test_reimplementation.py
+Tools/Electrophysiology/burst_detection/utility/__init__.py
+Tools/Electrophysiology/burst_detection/utility/Realigner.py

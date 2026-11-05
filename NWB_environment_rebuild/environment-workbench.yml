@@ -1,0 +1,48 @@
+# Create with: conda env create -f environment-workbench.yml
+# Workbench only; DeepLabCut remains in its separate environment.
+name: NWB_workbench
+channels:
+  - defaults
+dependencies:
+  - python=3.11
+  - pip
+  - setuptools
+  - wheel
+  - pip:
+      - PySide6==6.8.3
+      - pyqtgraph==0.13.7
+      - av==16.1.0
+      - Pillow==12.3.0
+      - numpy==2.2.6
+      - pandas==2.2.3
+      - scipy==1.15.3
+      - matplotlib==3.10.9
+      - seaborn==0.13.2
+      - xarray==2025.12.0
+      - h5py==3.16.0
+      - pynwb==3.1.3
+      - hdmf==4.3.1
+      - openpyxl==3.1.5
+      - scikit-learn==1.8.0
+      - statsmodels==0.14.6
+      - scikit-posthocs==0.12.0
+      - astropy==7.2.3
+      - pycwt==0.5.0b0
+      - tensorpac==0.6.5
+      - spectral-connectivity==2.0.0
+      - spikeinterface[full]==0.103.2
+      - probeinterface==0.3.2
+      - spikeinterface-gui[desktop]==0.11.0
+      - neo==0.14.6
+      - phylib==2.7.1
+      - quantities==0.16.4
+      - zarr==2.18.7
+      - numcodecs==0.15.2
+      - lvm-read==1.26
+      - alive-progress==3.3.0
+      - yaspin==3.5.1
+      - tqdm==4.70.1
+      - ipywidgets==8.1.9
+      - ipython==9.17.1
+      - spyder-kernels==3.1.6
+      - PyInstaller==6.22.3

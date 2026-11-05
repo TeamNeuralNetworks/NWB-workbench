@@ -1,0 +1,24 @@
+Portable project paths update
+
+Read docs/portable-projects.md before migrating an existing project.
+
+1. Close Workbench and its external tools.
+2. Copy this package over your existing main source package.
+3. Rebuild and update the project executable BEFORE migration:
+
+conda activate nwb_workbench
+cd /d "U:\Functionnal_Imaging_Electrophysiology"
+python build_windows.py --project "U:\new task\NWB app" --update-project
+
+4. Preview migration (no project changes):
+python Tools\General\migrate_project_paths.py "U:\new task\NWB app"
+
+5. Apply if the preview has no errors:
+python Tools\General\migrate_project_paths.py "U:\new task\NWB app" --apply
+
+Each modified configuration file is backed up automatically.
+NWB, videos, labels and trained weights are not rewritten.
+Keep the project and data folders in the same relative arrangement.
+Environment locations remain specific to each computer.
+
+New projects are portable automatically.
